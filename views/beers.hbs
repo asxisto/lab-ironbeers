@@ -1,0 +1,9 @@
+<h1>Beers Results</h1>
+
+<ul>
+  {{#each beersFromApi}}
+    <li>
+      {{> beerpartial this}}
+    </li>
+  {{/each}}
+</ul>

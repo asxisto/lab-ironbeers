@@ -1,0 +1,21 @@
+<ul>
+  {{#each thatBeer}}
+    <li>
+        {{> beerpartial }}
+        <br>
+        <h4>First Brewed: 
+          <span>{{first_brewed}}</span>
+        </h4>
+        <br>
+        <h4>Food Pairing:</h4>
+        <ul>
+          {{#each this.food_pairing}}
+          <li>{{this}}</li>
+          {{/each}}        
+        </ul>
+        <br>
+        <h4>Brewer Tips:</h4>
+        <p>{{brewers_tips}}</p>
+    </li>
+  {{/each}}
+</ul>
